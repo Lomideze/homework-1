@@ -1,7 +1,7 @@
 fun main() {
 
-    val a = 10
-    val b = 3
+    val a = Integer.valueOf(readLine())
+    val b = Integer.valueOf(readLine())
 
     val z = a + b
 
@@ -11,8 +11,12 @@ fun main() {
     val answer = readLine()!!
 
     if (answer == "yes") {
-        println("start again")
+
+        return main()
+
     } else if (answer == "no") {
-       println("end")
+
+        println("end")
+
     }
 }
